@@ -3,18 +3,10 @@ import React, {useState} from 'react'
 function Navbar() {
 
     const [menuOpent, setMenuOpen] = useState(false);
-    // const checkboxesRef = useRef([]);
 
     const toggleMenu = () => {
       setMenuOpen(!menuOpent)
     };
- 
-    // const uncheckAll = () => {
-    //     checkboxesRef.current.forEach((checkbox) => {
-    //       checkbox.checked = false;
-    //     toggleMenu();
-    //     });
-    // };
 
   return (
     <div>
