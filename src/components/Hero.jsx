@@ -37,7 +37,7 @@ function Hero() {
               <div className="flex pt-5 pb-10">
                 <a href={ResumePDF} download="PDF Document" target="_blank" rel="noreferrer">
                   <button className="btn bg-orange-500 text-white border-0 hover:bg-orange-500/60 focus:bg-orange-500/80">
-                    <span className="text-xl">
+                    <span className="md:hidden lg:flex text-xl">
                       <FaFileDownload />
                     </span>
                     Downloed CV

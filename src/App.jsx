@@ -40,18 +40,15 @@ import Skills from './components/Skills'
 import Contact from './components/Contact'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div>
-      <div className=''>
-        <Navbar />
-        <Hero />
-        <Education />
-        <Experience />
-        <Skills />
-        <Contact />
-      </div>
+      <Navbar />
+      <Hero />
+      <Education />
+      <Experience />
+      <Skills />
+      <Contact />
     </div>
   );
 }
