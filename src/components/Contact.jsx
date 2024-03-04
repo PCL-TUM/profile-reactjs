@@ -12,12 +12,15 @@ function Contact() {
         <div className="py-5 md:container md:mx-auto md:pt-0 md:pb-24 md:px-24">
           <div className="justify-between md:flex md:flex-row py-10">
             <div className="pb-5 hidden md:flex md:flex-col md:w-1/2">
-              <img
+              <img 
+                data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="700"
                 src={ImageContact}
                 className="max-w-auto sm:max-w-lg "
               />
             </div>
-            <div className="pb-5 md:px-10 md:w-1/2 md:pt-20">
+            <div 
+                data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="700" 
+                className="pb-5 md:px-10 md:w-1/2 md:pt-20">
               <h1 className="snap-always snap-start text-center text-5xl uppercase font-bold text-blue-950 md:text-left ">
                 Contact
               </h1>

@@ -7,7 +7,9 @@ function Education() {
       <div id="Education" className="bg-white px-10">
         <div className="md:container md:mx-auto md:py-5 md:px-24">
           <div className="justify-between md:flex md:flex-row-reverse ">
-            <div className="text-left pt-5 pb-10 md:px-0 md:pt-0 md:my-auto">
+            <div 
+                 data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="700" 
+                 className="text-left pt-5 pb-10 md:px-0 md:pt-0 md:my-auto">
               <h1 className="snap-always snap-start text-center text-5xl uppercase font-bold md:text-left md:ps-9 text-blue-950">
                 Education
               </h1>
@@ -23,7 +25,9 @@ function Education() {
                 </h1>
               </div>
             </div>
-            <div>
+            <div 
+                 data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="700" 
+                 className="">
               <img src={ImageEducation} className="max-w-auto sm:max-w-lg" />
               <div className="py-10 md:hidden">
                 <h1 className="text-xl text-orange-500 font-semibold">

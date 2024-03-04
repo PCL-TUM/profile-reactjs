@@ -7,15 +7,18 @@ function Hero() {
   return (
     <div>
       <div id="Home" className="pt-16">
-        <div className="md:container md:mx-auto md:py-24 md:px-24">
+        <div className="md:container md:mx-auto md:py-24 md:px-24 md:min-h-[43rem]">
           <div className="justify-between md:flex md:flex-row-reverse">
             <div className="md:flex md:w-auto">
-              <img
+              <img 
+                data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="800" 
                 src={img_cover}
                 className="px-10 mt-10 max-w-auto sm:mt-0 md:max-w-xl "
               />
             </div>
-            <div className="text-left px-10 pt-5 pb- md:px-0 md:pt-0 md:my-auto md:w-full">
+            <div 
+                 data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="800" 
+                 className="text-left px-10 pt-5 pb- md:px-0 md:pt-0 md:my-auto md:w-full">
               <h1 className="text-orange-500 text-2xl">Hello, I'm</h1>
               <h1 className="text-white text-5xl uppercase font-bold">
                 Phichet

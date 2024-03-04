@@ -6,12 +6,16 @@ function Experience() {
       <div id="Experience" className="bg-slate-50 px-10">
         <div className="md:container md:mx-auto md:py-5 md:px-24">
           <div className="justify-center md:flex pt-5">
-            <h1 className="snap-always snap-start text-center text-5xl uppercase font-bold md:text-left md:ps-10 text-blue-950 ">
+            <h1 
+                data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="700"
+                className="snap-always snap-start text-center text-5xl uppercase font-bold md:text-left md:ps-10 text-blue-950 ">
               Experience
             </h1>
           </div>
           <div className="justify-between py-10 grid gap-4 md:gap-8 md:pt-14 md:flex md:flex-row">
-            <div className="mb-5 p-8 md:w-1/2 bg-white md:p-12 shadow-lg rounded-3xl shadow-blue-950/40">
+            <div 
+                 data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="700"
+                 className="mb-5 p-8 md:w-1/2 bg-white md:p-12 shadow-lg rounded-3xl shadow-blue-950/40">
               <h1 className="text-xl text-blue-950 font-bold">Internship</h1>
               <h1 className="text-lg text-orange-500 font-semibold ">Jul 2021 - Oct 2021</h1>
               <h1 className="text-xl">Bluewind Solution Co., Ltd.</h1>
@@ -35,7 +39,9 @@ function Experience() {
                 <li>Testing the fluidity and normality of web applications</li>
               </ul>
             </div>
-            <div className="mb-5 p-8 md:w-1/2 bg-white md:p-12 shadow-lg rounded-3xl shadow-blue-950/40">
+            <div 
+                 data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="700"
+                 className="mb-5 p-8 md:w-1/2 bg-white md:p-12 shadow-lg rounded-3xl shadow-blue-950/40">
               <h1 className="text-xl text-blue-950 font-bold">Project</h1>
               <h1 className="text-lg text-orange-500 font-semibold ">Mar 2021 - Mar 2022</h1>
               <h1 className="text-xl">Parcel Sortation Via Image Processing</h1>

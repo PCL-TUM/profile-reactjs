@@ -1,24 +1,28 @@
-import React, {useState, useRef} from 'react'
+import React, {useState} from 'react'
 
 function Navbar() {
 
     const [menuOpent, setMenuOpen] = useState(false);
-    // const ref = useRef(null);
-    // const btnMenu = document.getElementById('menu-toggle');
+    // const checkboxesRef = useRef([]);
 
     const toggleMenu = () => {
-        setMenuOpen(!menuOpent)
-        // console.log(window.location.href);
-    }
-
+      setMenuOpen(!menuOpent)
+    };
+ 
+    // const uncheckAll = () => {
+    //     checkboxesRef.current.forEach((checkbox) => {
+    //       checkbox.checked = false;
+    //     toggleMenu();
+    //     });
+    // };
 
   return (
     <div>
       <nav className="bg-white p-4 shadow-xl fixed w-full rounded-b-2xl">
         <div className="flex justify-between mx-auto md:container md:mx-auto md:px-24">
-          <div className="">
+          <div data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="800" className="">
             <a className="flex flex-row" href="#Home">
-              <img
+              <img 
                 src="https://cdn-icons-png.flaticon.com/512/7316/7316704.png"
                 width="35"
                 height="25"
@@ -29,11 +33,11 @@ function Navbar() {
               </p>
             </a>
           </div>
-          <div className="pt-1">
+          <div data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="800" className="pt-1">
             <div className="md:hidden">
               {/* humberger btn  */}
               <input
-                // ref={ref}
+                // ref={(element) => { checkboxesRef.current.push(element);}}
                 onClick={toggleMenu}
                 id="menu-toggle"
                 type="checkbox"
@@ -93,9 +97,10 @@ function Navbar() {
 
         {/* menu for mobile */}
         {menuOpent ? (
+          <form>
           <ul className="md:hidden pt-4">
             <li>
-              <a
+              <a 
                 href="#Home"
                 className="block py-2 px-3 rounded-md hover:font-semibold hover:bg-blue-50 hover:text-blue-950 hover:shadow-md hover:shadow-blue-950/4 md:bg-transparent md:text-blue-700 md:p-0"
                 aria-current="page"
@@ -104,7 +109,7 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <a
+              <a 
                 href="#Education"
                 className="block py-2 px-3 rounded-md hover:font-semibold hover:bg-blue-50 hover:text-blue-950 hover:shadow-md hover:shadow-blue-950/4 md:bg-transparent md:text-blue-700 md:p-0"
                 aria-current="page"
@@ -113,7 +118,7 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <a
+              <a 
                 href="#Experience"
                 className="block py-2 px-3 rounded-md hover:font-semibold hover:bg-blue-50 hover:text-blue-950 hover:shadow-md hover:shadow-blue-950/4 md:bg-transparent md:text-blue-700 md:p-0"
                 aria-current="page"
@@ -122,7 +127,7 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <a
+              <a 
                 href="#Skills"
                 className="block py-2 px-3 rounded-md hover:font-semibold hover:bg-blue-50 hover:text-blue-950 hover:shadow-md hover:shadow-blue-950/4 md:bg-transparent md:text-blue-700 md:p-0"
                 aria-current="page"
@@ -131,7 +136,7 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <a
+              <a 
                 href="#Contact"
                 className="block py-2 px-3 rounded-md hover:font-semibold hover:bg-blue-50 hover:text-blue-950 hover:shadow-md hover:shadow-blue-950/4 md:bg-transparent md:text-blue-700 md:p-0"
                 aria-current="page"
@@ -140,6 +145,8 @@ function Navbar() {
               </a>
             </li>
           </ul>
+        </form>
+
         ) : null}
       </nav>
     </div>
