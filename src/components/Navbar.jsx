@@ -74,7 +74,7 @@ function Navbar() {
                   Skills
                 </a>
               </li>
-              <li className="">
+              {/* <li className="">
                 <a
                   href="#Contact"
                   data-to-scrollspy-id="Contact"
@@ -82,7 +82,7 @@ function Navbar() {
                 >
                   Contact
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
@@ -127,7 +127,7 @@ function Navbar() {
                 Skills
               </a>
             </li>
-            <li>
+            {/* <li>
               <a 
                 href="#Contact"
                 className="block py-2 px-3 rounded-md hover:font-semibold hover:bg-blue-50 hover:text-blue-950 hover:shadow-md hover:shadow-blue-950/4 md:bg-transparent md:text-blue-700 md:p-0"
@@ -135,7 +135,7 @@ function Navbar() {
               >
                 Contact
               </a>
-            </li>
+            </li> */}
           </ul>
         </form>
 
