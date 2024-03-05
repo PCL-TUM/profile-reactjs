@@ -37,24 +37,24 @@ function Hero() {
                   Rajamangala University of Technology Thanyaburi
                 </h1>
               </div>
-              <div className="pt-5">
+              {/* <div className="pt-5">
                 <a href="https://github.com/PCL-TUM">
                   <span className="flex flex-row w-100 text-3xl text-slate-300"><FaGithub /> 
                     <span className="text-xl ps-2 font-semibold"> PCL-TUM</span><span className="text-slate-500 text-xl ps-2 hidden md:flex"> (Phichet Liwvaha)</span>
                   </span>
                 </a>
-              </div>
+              </div> */}
               <div className="flex pt-5 pb-10">
-                <a href={ResumePDF} download="PDF Document" target="_blank" rel="noreferrer">
+                {/* <a href={ResumePDF} download="PDF Document" target="_blank" rel="noreferrer">
                   <button className="btn bg-orange-500 text-white border-0 hover:bg-orange-500/60 focus:bg-orange-500/80">
                     <span className="md:hidden lg:flex text-xl">
                       <FaFileDownload />
                     </span>
                     Downloed CV
                   </button>
-                </a>
+                </a> */}
                 <a href="#Skills">
-                  <button className="btn ms-3">Skill & tools</button>
+                  <button className="btn ">Skill & tools</button>
                 </a>
               </div>
             </div>
