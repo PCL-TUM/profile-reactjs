@@ -1,6 +1,10 @@
 import React from 'react'
 import ImageContact from '../assets/image/illustration-dark.svg'
 
+import { FaPhoneVolume } from "react-icons/fa6";
+import { FaEnvelope } from "react-icons/fa6";
+import { FaLocationDot } from "react-icons/fa6";
+
 function Contact() {
   return (
     <div>
@@ -22,16 +26,16 @@ function Contact() {
               </h1>
               <div className="pt-10 md:flex md:flex-col">
                 <h3 className='text-lg text-orange-500 font-semibold'>Phone Number</h3>
-                <h1 className="text-xl text-blue-950 pb-5">
-                 (+66) 97 - 2340942
+                <h1 className="flex flex-row text-xl text-blue-950 pb-5">
+                 <span className='pt-2 pe-3'><FaPhoneVolume /></span>: (+66) 97 - 2340942
                 </h1>
                 <h3 className='text-lg text-orange-500 font-semibold'>Mail</h3>
-                <h1 className="text-xl text-blue-950 pb-5">
-                phichet.pcl@gmail.com
+                <h1 className="flex flex-row text-xl text-blue-950 pb-5">
+                 <span className='pt-2 pe-3'><FaEnvelope /></span>: phichet.pcl@gmail.com
                 </h1>
                 <h3 className='text-lg text-orange-500 font-semibold'>Address</h3>
-                <h1 className="text-xl text-blue-950 pb-5">
-                69 Moo.1, Khun Thale, Mueang Surat Thani, Surat Thani, 84100
+                <h1 className="flex flex-row text-xl text-blue-950 pb-5">
+                  <span className='pt-2 pe-3'><FaLocationDot /></span>: 69 Moo.1, Khun Thale, Mueang Surat Thani, Surat Thani, 84100
                 </h1>
               </div>
             </div>

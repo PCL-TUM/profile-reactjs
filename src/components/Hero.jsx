@@ -1,5 +1,8 @@
 import React from "react";
 import { FaFileDownload } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
+
+// Image
 import img_cover from "../assets/image/thisisme.png";
 import ResumePDF from "../assets/pdf/Resume.pdf"
 
@@ -33,6 +36,13 @@ function Hero() {
                 <h1 className="text-slate-300 text-2xl ">
                   Rajamangala University of Technology Thanyaburi
                 </h1>
+              </div>
+              <div className="pt-5">
+                <a href="https://github.com/PCL-TUM">
+                  <span className="flex flex-row w-100 text-3xl text-slate-300"><FaGithub /> 
+                    <span className="text-xl ps-2 font-semibold"> PCL-TUM</span><span className="text-slate-500 text-xl ps-2 hidden md:flex"> (Phichet Liwvaha)</span>
+                  </span>
+                </a>
               </div>
               <div className="flex pt-5 pb-10">
                 <a href={ResumePDF} download="PDF Document" target="_blank" rel="noreferrer">
